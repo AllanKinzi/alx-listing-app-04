@@ -1,3 +1,4 @@
+import { Button } from "@/components/common/Button";
 import Layout from "@/components/layout/Layout";
 
 export default function Home() {
@@ -14,6 +15,9 @@ export default function Home() {
       <section>
         Listing Section
       </section>
+      <Button variant={"default"} className="bg-c-primary text-white">
+            Get Started
+          </Button>
     </>
   );
 }
