@@ -35,8 +35,43 @@ export default function Home() {
         </div>
       </section>
 
-{/* Listing Section */}
-      <section>
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <PropertyDetail property={{
+            id: "1",
+            name: "Villa Arrecife Beach House",
+            location: "New York, NY",
+            price: 100,
+            description:"Test CARD",
+            imageUrl: "/assets/images/property1.png",
+            tags: ["Beach", "Private", "Luxury", "Swimming Pool", "Private Pool"],
+          }} />  
+          <PropertyDetail property={{
+            id: "1",
+            name: "Villa Arrecife Beach House",
+            location: "New York, NY",
+            price: 100,
+            description:"Test CARD",
+            imageUrl: "/assets/images/property1.png",
+            tags: ["Beach", "Private", "Luxury", "Swimming Pool", "Private Pool"],
+          }} />  
+          <PropertyDetail property={{
+            id: "1",
+            name: "Villa Arrecife Beach House",
+            location: "New York, NY",
+            price: 100,
+            description:"Test CARD",
+            imageUrl: "/assets/images/property1.png",
+            tags: ["Beach", "Private", "Luxury", "Swimming Pool", "Private Pool"],
+          }} />  
+          <PropertyDetail property={{
+            id: "1",
+            name: "Villa Arrecife Beach House",
+            location: "New York, NY",
+            price: 100,
+            description:"Test CARD",
+            imageUrl: "/assets/images/property1.png",
+            tags: ["Beach", "Private", "Luxury", "Swimming Pool", "Private Pool"],
+          }} />  
           <PropertyDetail property={{
             id: "1",
             name: "Villa Arrecife Beach House",
