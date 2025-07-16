@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8  py-8 mx-auto">
           <div className="pr-24 w-[640px] flex flex-col gap-8 ">
             <Image
-              src="/images/logo_white.svg"
+              src="/assets/images/logo_white.svg"
               width={60}
               height={30}
               alt="logo"

@@ -17,7 +17,7 @@ const Header = () => {
       </div>
       <div className="mid-header-section border-b-gray-300 h-22 py-4 px-6  flex justify-between items-center">
         <div className="logo">
-          <Image src="/images/logo.png" alt="logo" width={60} height={30} />
+          <Image src="/assets/images/logo.png" alt="logo" width={60} height={30} />
         </div>
         <div className="logo-center-section flex gap-2 border justify-center items-center h-[58px] rounded-[60px]">
           <div className="flex gap-2 items-center ml-[30px] mr-[88px]">
@@ -56,7 +56,7 @@ const Header = () => {
 
           <div className="flex items-center justify-center w-[42px] h-[42px] mr-3 rounded-[50px] bg-[#FFA800] cursor-pointer">
             <Image
-              src="/Icons/Magnifer.png"
+              src="/assets/Icons/Magnifer.png"
               alt="magnifier"
               width={20}
               height={20}
@@ -69,133 +69,133 @@ const Header = () => {
         </div>
       </div>
       <div>
-        <div className="flex gap-8 h-[88px] border items-center px-6 min-w-max overflow-x-auto scrollbar-hide">
-          <CategorySelector
+        <div className="flex gap-8 h-[88px] border-t items-center px-6 min-w-max overflow-x-auto scrollbar-hide">
+          <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-          <CategorySelector
+          <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-          <CategorySelector
+          <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-          <CategorySelector
+          <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-          <CategorySelector
+          <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-          <CategorySelector
+          <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-          <CategorySelector
+          <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-          <CategorySelector
+          <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-          <CategorySelector
+          <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-          <CategorySelector
+          <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-          <CategorySelector
+          <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-          <CategorySelector
+          <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-           <CategorySelector
+           <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-          <CategorySelector
+          <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-          <CategorySelector
+          <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-          <CategorySelector
+          <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-          <CategorySelector
+          <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-          <CategorySelector
+          <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-          <CategorySelector
+          <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
             />
-             <CategorySelector
+             <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-          <CategorySelector
+          <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-          <CategorySelector
+          <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-          <CategorySelector
+          <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-          <CategorySelector
+          <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-          <CategorySelector
+          <FilterPill
             title="Pool"
             icon="pool.svg"
             href="/categories/pool"
           />
-          <CategorySelector
+          <FilterPill
             title="Table"
             icon="pool.svg"
             href="/categories/pool"
@@ -209,17 +209,17 @@ const Header = () => {
 
 export default Header;
 
-interface CategorySelectorProps {
+interface FilterPillProps {
   title: string;
   icon: string;
   href: string;
 }
 
-const CategorySelector = ({ title, icon, href }: CategorySelectorProps) => {
+const FilterPill = ({ title, icon, href }: FilterPillProps) => {
   return (
     <Link href={href} className="flex flex-col gap-1 items-center">
       <Image
-        src={`/Icons/${icon}`}
+        src={`/assets/Icons/${icon}`}
         alt={title.toLowerCase()}
         width={20}
         height={20}
