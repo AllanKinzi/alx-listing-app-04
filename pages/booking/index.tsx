@@ -1,6 +1,5 @@
 // pages/booking/index.tsx
 
-import axios from "axios";
 import { useState } from "react";
 
 export default function BookingForm() {
@@ -27,7 +26,7 @@ export default function BookingForm() {
   };
 
   const validateForm = () => {
-    for (let key in formData) {
+    for (const key in formData) {
       if (!formData[key as keyof typeof formData]) return false;
     }
     return true;
@@ -46,7 +45,7 @@ export default function BookingForm() {
     }
 
     try {
-      const response = await axios.post("/api/bookings", formData);
+      // const response = await axios.post("/api/bookings", formData);
       setSuccess("Booking confirmed successfully!");
       setFormData({
         firstName: "",

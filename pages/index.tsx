@@ -1,7 +1,5 @@
 import { Button } from "@/components/common/Button";
-import Layout from "@/components/layout/Layout";
 import PropertyDetail from "@/components/property/PropertyDetail";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -35,7 +33,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
           <PropertyDetail property={{
             id: "1",
             name: "Villa Arrecife Beach House",
